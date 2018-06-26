@@ -1,0 +1,728 @@
+
+
+/* Base Styles -------------------- */
+
+
+* {
+  box-sizing: border-box;
+  text-transform: uppercase;
+}
+
+body {
+  font-family: "Muli", sans-serif;
+  color: #b6bfc8;
+  text-align: center;
+  margin-top: 151px;
+  background: linear-gradient(to bottom, #000000, #262626);
+  background-color: black;
+  border-bottom: black solid 4px;
+  width: 100%;
+
+}
+
+header {
+  background-color: black;
+  position:fixed;
+  top:0;
+  z-index: 100;
+  width: 100%;
+  text-align: center;
+  padding: 0 5%;
+  border-top: solid #262626 4px;
+}
+
+h2 {
+  letter-spacing: .1em;
+}
+
+
+/* Class Styles -------------------- */
+
+.name {
+  background:black;
+  font-size: 1.4em;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+.name {
+  margin-right: auto;
+}
+
+
+.container {
+  width:95%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.main-nav ul {
+  padding: 0;
+  margin: 3px;
+}
+
+.name,
+.main-nav li{
+  margin-bottom: 5px;
+}
+
+.main-nav li {
+  list-style-type: none;
+  text-align:center;
+  margin-right: 3px;
+  color:white;
+  font-weight: 350;
+  padding-right: 8px;
+  background: black;
+  font-size:.6em;
+  padding-top: 2px;
+  margin-top: 1px;
+}
+
+.main-nav a {
+  display: block;
+}
+
+.reel {
+  width: 100%;
+}
+
+.pic {
+  display: block;
+  width: 100%;
+}
+
+.work {
+  margin-bottom: 0;
+  z-index: 20;
+  font-size: .4em;
+  width: 100%;
+}
+
+.project_1 {
+  box-sizing: content-box;
+  margin-top: 20px;
+}
+
+.project_2,
+.project_3,
+.project_4,
+.project_5 {
+  margin-top: 50px;
+}
+
+.project_5 {
+  z-index: 15;
+  margin-bottom: 50px;
+}
+
+.words {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sport {
+  display: inline-block;
+  padding-left: 10px;
+  margin-bottom: 15px;
+  letter-spacing: .2em;
+  font-weight: 900;
+}
+
+.type {
+  display: none;
+  font-weight: 100;
+  padding-left: 20px;
+  margin-bottom: 15px;
+  letter-spacing: .1em;
+}
+
+.role {
+  font-weight: 100;
+  padding-right: 20px;
+  margin-bottom: 15px;
+  letter-spacing: .1em;
+}
+
+.secondary,
+.contact {
+  text-align: center;
+}
+
+.secondary p {
+  font-weight: 100;
+  z-index: 10;
+}
+
+.about {
+  width: 95%;
+  margin: auto;
+  padding: 20px 15% 50px 15%;
+  background: black;
+  margin-bottom: 60px;
+  margin-top: 85px;
+}
+
+.about h2 {
+  font-weight: 700;
+  font-size: .8em;
+}
+
+.about p {
+  text-transform: none;
+  font-size: .7em;
+  line-height: 20px;
+  padding-bottom: 25px;
+}
+
+.line {
+  border-bottom: solid #b6bfc8 1px;
+  margin-bottom: 30px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gear {
+  margin: 30px 0 70px;
+  font-size: .6em;
+}
+
+.gear h2 {
+  padding-bottom: 20px;
+}
+
+.contact {
+  text-align: center;
+  color: #b6bfc8;
+  font-size: .7em;
+}
+
+.deets {
+  text-weight: 900;
+  letter-spacing: .2em
+}
+
+.footer {
+  height: 50px;
+}
+
+/* Pseudo-Class Styles -------------------- */
+
+a:link {
+  color: #b6bfc8;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #b6bfc8;
+}
+
+a:hover {
+  color: #3399ff;
+}
+
+
+/* ID Styles -------------------- */
+
+#titlefirst {
+  font-weight: 900;
+  color: white;
+}
+
+#titlelast {
+  font-weight: 350;
+}
+
+#last {
+  padding-right:0;
+}
+
+#aboutline {
+  margin-top:-60px;
+}
+
+#subhead {
+  display: inline-block;
+  font-style: italic;
+  font-size: .6em;
+  margin-bottom: 30px;
+  letter-spacing: .1em;
+}
+
+#email {
+  text-transform: none;
+}
+
+#first {
+  font-size: 2.5em;
+}
+
+#middle {
+  padding: 0 15px;
+  font-size: 2.5em;
+}
+
+#lastl {
+  font-size: 2.5em;
+}
+
+/* Fixes ---------------------------- */
+
+/* Header Fixes */
+/* .header-fix::before {
+  display: block;
+  content: " ";
+  margin-top: -90px;
+  height: 90px;
+  visibility: hidden;
+  pointer-events: none;
+} */
+
+
+/* Float Clear Fix */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Media Queries -------------------- */
+
+         /* Tiny layout, super-stacked header */
+@media (min-width: 275px) {
+  body {
+    margin-top: 90px;
+  }
+
+  .main-nav li {
+    padding-top: 8px;
+    margin-top: 2px;
+  }
+
+  .name,
+  .main-nav li{
+    display: inline-block;
+  }
+
+  .work {
+    padding-top: 60px;
+  }
+
+  .project_1 {
+    margin-top: 50px;
+  }
+
+}
+
+
+         /* Tiny layout, stacked header */
+@media (min-width:525px) {
+  .name {
+    font-size: 1.5em;
+  }
+
+  .container {
+    width:90%;
+  }
+
+  .main-nav li {
+    margin-right: 3px;
+    padding-right: 8px;
+    font-size: 1em;
+  }
+
+  .work {
+    font-size: .55em;
+  }
+
+  .project_2,
+  .project_3,
+  .project_4,
+  .project_5 {
+    margin-top: 60px;
+  }
+
+  .about {
+    margin-top: 85px;
+  }
+}
+
+      /* Small layout, stacked header */
+@media (min-width:600px) {
+
+  body {
+    margin-top: 55px;
+  }
+
+  .name {
+    font-size: 1.6em;
+  }
+
+  .main-nav li {
+    margin-right: 4px;
+    padding-right: 10px;
+    font-size:1.1em;
+  }
+
+  .work {
+    font-size: .6em;
+  }
+
+  .words {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .sport {
+    padding-left: 30px;
+    letter-spacing: .4em;
+  }
+
+  .type {
+    display: inline-block;
+    padding-left: 20px;
+    letter-spacing: .4em;
+  }
+
+  .role {
+    letter-spacing: .2em;
+  }
+
+  .project_2,
+  .project_3,
+  .project_4,
+  .project_5 {
+    margin-top: 70px;
+  }
+
+  .about {
+    margin-top: 100px;
+  }
+
+  .about h2 {
+    font-size: 1.2em;
+  }
+
+  #subhead {
+    font-size: .9em;
+  }
+
+  .about p {
+      font-size: .9em;
+      line-height: 25px;
+  }
+
+  .gear {
+    font-size: .8em;
+  }
+
+  .contact {
+    font-size: .8em;
+  }
+
+  #first {
+    font-size: 3rem;
+  }
+
+  #middle {
+    padding: 0 20px;
+    font-size: 3rem;
+  }
+
+  #lastl {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 665px) {
+  .work {
+    font-size: .65em;
+  }
+}
+
+       /* Small layout, float header */
+@media (min-width: 725px) {
+
+  body {
+    margin-top: 10px;
+  }
+
+  .name {
+    float:left;
+    margin-top: 10px;
+    padding-top: 10px;
+  }
+
+  .container {
+    margin: 0 auto;
+  }
+
+  .main-nav ul {
+    display: block;
+    float: right;
+    margin-top: 10px;
+  }
+
+  .main-nav li {
+    margin-right: 5px;
+    float: left;
+    padding-right: 5px;
+    padding-top: 13px;
+    margin-top: 2px;
+    font-size: 1.2em;
+  }
+
+  .main-nav a {
+    display: block;
+  }
+
+  .work {
+    font-size: .9em;
+  }
+
+  .project_2,
+  .project_3,
+  .project_4,
+  .project_5 {
+    margin-top: 80px;
+  }
+
+  .about h2 {
+    font-size: 1.2em;
+  }
+
+  .about p {
+      font-size: 1.1em;
+      line-height: 30px;
+  }
+
+  .about {
+    margin-top: 110px;
+  }
+
+  .gear {
+    font-size: .9em;
+  }
+
+  .contact {
+    font-size: .9em;
+  }
+
+  #first {
+    font-size: 3.5rem;
+  }
+
+  #middle {
+    padding: 0 25px;
+    font-size: 3.5rem;
+  }
+
+  #lastl {
+    font-size: 3.5rem;
+  }
+}
+
+           /* Medium layout, float header */
+@media (min-width: 850px) {
+
+  body {
+    margin-top: 10px;
+  }
+
+  .name {
+    float:left;
+  }
+
+  .main-nav ul {
+    float: right;
+  }
+
+  .name,
+  .main-nav li{
+    margin-bottom: 15px;
+  }
+
+  .main-nav li {
+    padding-right: 7px;
+    font-size:1.3em;
+    padding-top: 13px;
+    margin-top: 2px;
+  }
+
+  .work {
+    font-size: .9em;
+  }
+
+  .sport {
+    padding-left: 20px;
+    letter-spacing: .5em;
+  }
+
+  .type {
+    display: inline-block;
+    padding-left: 20px;
+    letter-spacing: .5em;
+  }
+
+  .role {
+
+    letter-spacing: .3em;
+  }
+
+  .project_2,
+  .project_3,
+  .project_4,
+  .project_5 {
+    margin-top: 90px;
+  }
+
+  .about h2 {
+    font-size: 1.4em;
+  }
+
+  #subhead {
+    font-size: 1em;
+  }
+
+  .about {
+    padding: 20px 10% 50px 24%;
+    background: linear-gradient(90deg, transparent 0, black 30%),
+                /* linear-gradient(90deg, transparent -20%, black 30%), */
+                left center no-repeat url(img/jordansetsmall.jpg);
+    max-width: 1380px;
+    margin-top: 135px;
+    }
+
+    .gear {
+      font-size: 1em;
+    }
+
+    .contact {
+      font-size: 1em;
+    }
+
+    #middle {
+      padding: 0 30px;
+    }
+}
+            /* Fullsize layout - header fixes */
+@media (min-width: 900px) {
+  body {
+    margin-top: 6.5px;
+  }
+
+  .container {
+    width: 92%;
+  }
+
+  .name {
+    font-size: 1.7em;
+  }
+
+  .main-nav li {
+    font-size:1.2em;
+    padding-right: 10px;
+  }
+
+  .work {
+    font-size: 1.1em;
+  }
+
+  .project_2,
+  .project_3,
+  .project_4,
+  .project_5 {
+    margin-top: 100px;
+  }
+
+  .gear {
+    font-size: 1.1em;
+  }
+
+  .contact {
+    font-size: 1.1em;
+  }
+
+  .social {
+    font-size: 55px;
+  }
+}
+
+@media (min-width: 950px) {
+  body {
+    margin-top: 4.5px;
+  }
+
+  .main-nav li {
+    padding-right: 20px;
+    font-size: 1.3em;
+  }
+}
+
+@media (min-width: 1000px) {
+  body {
+    margin-top: 2.5px;
+  }
+
+  .main-nav li {
+    padding-right: 30px;
+    font-size: 1.4em;
+  }
+}
+
+@media (min-width: 1050px) {
+  body {
+    margin-top: -0.5px;
+  }
+}
+
+@media (min-width: 1100px) {
+  body {
+    margin-top: -3.5px;
+  }
+
+  .main-nav li {
+    padding-right: 40px;
+  }
+}
+
+@media (min-width: 1150px) {
+  body {
+    margin-top: -6px;
+  }
+
+  .main-nav li {
+    padding-right: 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    margin-top: -10px;
+  }
+
+  .main-nav li {
+    padding-right: 50px;
+  }
+}
+
+@media (min-width: 1250px) {
+  body {
+    margin-top: -14px;
+  }
+}
+
+@media (min-width: 1300px) {
+  body {
+    margin-top: -19px;
+  }
+}
+
+@media (min-width: 1350px) {
+  body {
+    margin: auto;
+    margin-top: -25px;
+    max-width: 2200px;
+  }
+}
