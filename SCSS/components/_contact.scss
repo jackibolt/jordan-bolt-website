@@ -1,0 +1,28 @@
+
+// contact styles
+
+.contact {
+
+}
+
+
+.social {
+  margin: auto;
+  a {
+    margin: 25px;
+    path,
+    circle {
+      transition: fill .5s;
+    }
+    &:hover {
+      path,
+      circle {
+        fill: $secondary;
+      }
+    }
+  }
+}
+
+.social-link {
+  height: 45px;
+}

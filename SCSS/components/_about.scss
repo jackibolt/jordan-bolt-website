@@ -1,0 +1,18 @@
+
+.about {
+  background-color: black;
+  width: 95%;
+  font-size: $text-font-size;
+  border-radius: 5px;
+  @include mediaQ('large') {
+    background: linear-gradient(90deg, transparent 0, black 30%),
+                left center no-repeat url('../img/jordansetsmall.jpg');
+    max-width: 1380px;
+    padding-left: 23%;
+  }
+}
+
+#about-text {
+  line-height: 21px;
+  width: 80%;
+}

@@ -1,0 +1,28 @@
+// BASE styles
+
+* {
+  font-family: $prim-font;
+  box-sizing: border-box;
+  text-transform: uppercase;
+}
+
+body {
+  color: #b6bfc8;
+  text-align: center;
+  background: linear-gradient(to bottom, #000000, #262626);
+  background-color: black;
+  border-bottom: black solid 4px;
+  width: 100%;
+  font-size: $base-font-size;
+  position: relative;
+}
+
+a {
+  color: inherit;
+  transition: color .5s;
+}
+
+a:hover {
+  text-decoration: none;
+  color: $secondary;
+}

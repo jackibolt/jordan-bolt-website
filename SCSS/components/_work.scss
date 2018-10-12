@@ -1,0 +1,50 @@
+
+// content styles
+
+#main-content,
+#work {
+  padding: 0;
+}
+
+.words {
+  width: 98%;
+  margin: auto;
+  font-size: .6rem;
+  @include mediaQ('med') {
+    font-size: 1rem;
+  }
+}
+
+.org {
+  display: none;
+  letter-spacing: .2em;
+  font-weight: 100;
+  font-size: .7rem;
+  @include mediaQ('med'){
+    display: block;
+  }
+}
+
+.sport,
+.type {
+  display: block;
+  @include mediaQ('med'){
+    display: inline;
+  }
+}
+
+.sport {
+  letter-spacing: .2em;
+  font-weight: 900;
+}
+
+.type,
+.role {
+  letter-spacing: .1em;
+}
+
+.role {
+  @include mediaQ('med'){
+    margin-top: 15px;
+  }
+}

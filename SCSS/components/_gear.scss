@@ -1,0 +1,15 @@
+
+// gear styles
+
+#gear {
+  font-size: $text-font-size;
+  line-height: 21px;
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 80%;
+  margin: auto;
+  background-color: rgba(0, 0, 0, .15);
+  @include mediaQ('med'){
+    width: 60%;
+  }
+}

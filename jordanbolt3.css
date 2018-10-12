@@ -27,12 +27,30 @@ header {
   z-index: 100;
   width: 100%;
   text-align: center;
-  padding: 0 5%;
+  /* padding: 0 5%; */
   border-top: solid #262626 4px;
 }
 
 h2 {
   letter-spacing: .1em;
+}
+
+/* Loader Styles -------------------- */
+
+.loader {
+  width: 100%;
+  margin: auto;
+  height: 1200px;
+  padding: 0;
+  z-index: 150;
+  /* background-color: #262626; */
+  background-color: pink;
+}
+
+.loader-img{
+  width: 50px;
+  height: 50px;
+
 }
 
 
@@ -54,6 +72,7 @@ h2 {
   width:95%;
   text-align: center;
   margin: 0 auto;
+  padding: 0 5%;
 }
 
 .main-nav ul {
@@ -268,16 +287,6 @@ a:hover {
 }
 
 /* Fixes ---------------------------- */
-
-/* Header Fixes */
-/* .header-fix::before {
-  display: block;
-  content: " ";
-  margin-top: -90px;
-  height: 90px;
-  visibility: hidden;
-  pointer-events: none;
-} */
 
 
 /* Float Clear Fix */
@@ -588,7 +597,6 @@ a:hover {
   .about {
     padding: 20px 10% 50px 24%;
     background: linear-gradient(90deg, transparent 0, black 30%),
-                /* linear-gradient(90deg, transparent -20%, black 30%), */
                 left center no-repeat url(img/jordansetsmall.jpg);
     max-width: 1380px;
     margin-top: 135px;

@@ -1,0 +1,66 @@
+
+// loader styles
+
+.loader {
+  height: 100vh;
+  z-index: 45;
+  background: black;
+  animation: fade 1s linear forwards;
+  animation-delay: 3.5s;
+}
+
+.loader-logo {
+  padding-top: 100px;
+  width: 60%;
+  @include mediaQ('med'){
+    width: 50%;
+  }
+  @include mediaQ('large'){
+    width: 35%;
+  }
+  margin: auto;
+  z-index: 50;
+}
+
+.r-1 {
+  stroke-dasharray: 238;
+  stroke-dashoffset: 238;
+  animation: lineAnimation 1s linear forwards;
+}
+
+.r-2 {
+  stroke-dasharray: 238;
+  stroke-dashoffset: 238;
+  animation: lineAnimation 1s ease-out forwards;
+  animation-delay: 1s;
+}
+
+.letters,
+.mounts {
+  opacity: 0;
+  animation: logoOpac 1.5s linear forwards;
+  animation-delay: 1.7s;
+}
+
+/// @keyframe ///
+
+@keyframes lineAnimation {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes logoOpac {
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .7;
+  }
+}
+
+@keyframes fade {
+  100% {
+    opacity: 0;
+  }
+}
