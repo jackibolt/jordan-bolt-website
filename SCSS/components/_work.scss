@@ -1,6 +1,16 @@
 
 // content styles
 
+#reel {
+  margin-top: 70px;
+  @include mediaQ('med'){
+    margin-top: 20px;
+  }
+  @include mediaQ('large'){
+    margin-top: -30px;
+  }
+}
+
 #main-content,
 #work {
   padding: 0;

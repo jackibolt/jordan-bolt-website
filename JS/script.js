@@ -18,3 +18,8 @@ const antiLoader = () => {
 
 
 window.addEventListener("hashchange", function() { scrollBy(0, -90) })
+
+// close toggle menu on click
+$('.navbar-collapse a').click(function(){
+    $(".navbar-collapse").collapse('hide');
+});

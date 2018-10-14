@@ -137,6 +137,20 @@ img {
   width: 100%;
 }
 
+#reel {
+  margin-top: 70px;
+}
+@media (min-width: 768px) {
+  #reel {
+    margin-top: 20px;
+  }
+}
+@media (min-width: 992px) {
+  #reel {
+    margin-top: -30px;
+  }
+}
+
 #main-content,
 #work {
   padding: 0;
@@ -201,7 +215,7 @@ img {
 @media (min-width: 992px) {
   .about {
     background: linear-gradient(90deg, transparent 0, black 30%), left center no-repeat url("../img/jordansetsmall.jpg");
-    max-width: 1380px;
+    max-width: 1450px;
     padding-left: 23%;
   }
 }
